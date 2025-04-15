@@ -1,0 +1,6 @@
+<h2>Products</h2>
+<div class="d-flex flex-column gap-2">
+  <button class="btn btn-primary" *ngFor="let product of products" (click)="addToCart(product)">
+    {{ product.productName }}
+  </button>
+</div>
